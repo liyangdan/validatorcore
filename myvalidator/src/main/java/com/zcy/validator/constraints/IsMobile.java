@@ -1,6 +1,5 @@
 package com.zcy.validator.constraints;
 
-import com.zcy.validator.constarintvalidation.IsMobileValiadator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
