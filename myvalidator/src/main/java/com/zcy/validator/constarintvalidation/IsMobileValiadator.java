@@ -43,6 +43,9 @@ public class IsMobileValiadator implements ConstraintValidator<IsMobile, String>
 //        context.disableDefaultConstraintViolation();
 //        context.buildConstraintViolationWithTemplate("bt自定义错误信息")
 //                .addConstraintViolation();
+        if(null == value || "" == value) {
+            return false;
+        }
         return Integer.parseInt(value) < 10 ? true : false;
 
     }
