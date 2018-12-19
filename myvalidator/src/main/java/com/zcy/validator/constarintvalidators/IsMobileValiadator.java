@@ -1,4 +1,4 @@
-package com.zcy.validator.constarintvalidation;
+package com.zcy.validator.constarintvalidators;
 
 import com.zcy.validator.constraints.IsMobile;
 
