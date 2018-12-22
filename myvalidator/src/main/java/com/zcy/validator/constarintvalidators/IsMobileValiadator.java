@@ -14,7 +14,6 @@ import java.util.regex.Pattern;
  * @author liyangdan
  * @date 2018/12/4 9:21 PM
  */
-
 public class IsMobileValiadator implements ConstraintValidator<IsMobile, String> {
     static int count;
     private static final Pattern MOBILE_PATTERN = Pattern.compile("1\\d{10}");
@@ -31,12 +30,11 @@ public class IsMobileValiadator implements ConstraintValidator<IsMobile, String>
         //初始化:拿到IsMobile中的required中的值
         // 方法传进来一个所要验证的标注类型的实例
         required = constraintAnnotation.requried();
-
     }
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
-
+        System.out.println("测试spi-----");
         count++;
         System.out.println("IsMobileValiadator执行count次数： " + count);
         //替换掉自定义属性
